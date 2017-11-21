@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Billing cart</title>
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ramaraja|Righteous|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Yrsa" rel="stylesheet">
+	<meta name="description" content="Web development">
+	<meta name="keywords" content="Web and Mobile development">
+	<meta name="author" content="Yehor Valentiukevych">
+</head>
+<body>
+	
+	<header class="top"> <!--header.top-->	
+		<div id="logo">
+			<img src="images/logo.svg" alt="logotype">
+		</div> <!-- /logo -->
+
+		<nav class="navigation">
+			<ul>
+				<li><a href="#">BOOKS</a></li>
+				<li><a href="#">WRITERS</a></li>
+				<li><a href="#">PUBLISHERS</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+				
+		<div class="header_menu"> <!-- header_menu -->
+			<div class="search">
+				<img src="images/rectangle3.svg" alt="search">
+			</div>
+
+			<div class="shopping_cart">
+				<img src="images/rectangle2.svg" alt="shopping cart">
+			</div>
+
+			<div class="userpic">
+				<img src="images/userpic.png" alt="user">
+			</div>
+		</div> <!-- /header_menu -->
+	</header> <!--/header.top-->
+
+	<section class="conteiner">
+			<h1>Your cart</h1>
+				
+			<h2>Billing address</h2>
+
+		<form action="" class="billing">
+			<section class="billing_blockl">
+				<div class="gender_block">
+					<h3>Gender: </h3>
+					<input id="gen-man" type="radio" name="gender" value="man">
+					<label for="gen-man">Man</label>
+					<input id="gen-woman" type="radio" name="gender" value="woman">
+					<label for="gen-woman">Woman</label>
+				</div> <!-- /gender_block -->
+				<div class="gender_user_data">
+					<div class="wrap_input">
+						<input type="text" name="text" placeholder="First name">
+					</div>
+					<div class="wrap_input">
+						<input type="text" name="text" placeholder="Last name">
+					</div>
+					<div class="wrap_input">
+						<input type="text" name="text" placeholder="E-mail">
+					</div>
+					<div class="wrap_input">
+						<input type="text" name="text" placeholder="Phone">
+					</div>
+				</div> <!-- /gender_user_data -->
+			</section> <!-- /billing_blockl -->
+
+			<section class="billing_blockr">
+				<div class="wrap_input_address">	
+					<textarea placeholder="Address" cols="100" rows="1" name="address" id="address" maxlength="200"></textarea>
+				</div>
+				<div class="wrap_input">
+					<input type="text" name="text" placeholder="Country">
+				</div>
+				<div class="wrap_input">
+					<input type="text" name="text" placeholder="City">
+				</div>
+				<div class="wrap_input">
+					<input type="text" name="text" placeholder="Stete/Province">
+				</div>
+				<div class="wrap_input">
+					<input type="text" name="text" placeholder="zip/Postal">
+				</div>
+			</section> <!-- /billing_blockr -->
+		</form> <!-- /billing -->
+
+		<section class="shipping_method">
+			<h3>Shipping method: </h3>
+				<input id="usp_saver" type="radio" name="usp_saver" value="usp_saver">
+				<label for="usp_saver">USP_SAVER Free</label>
+				<input id="usp_express" type="radio" name="usp_express" value="usp_express">
+				<label for="usp_express">USP Express $7.50</label>
+		</section>
+
+		<section class="create_account">	
+			<input type="checkbox" name="create_account">
+			"Create account later use"
+			<br>
+		</section>
+		
+		<section class="payment_method">
+			<h2>Payment method</h2>
+
+			<input id="credit_card" type="radio" name="payment_method" value="credit_card">
+			<label for="credit_card">Credit card</label>
+			<input id="bancontact" type="radio" name="payment_method" value="bancontact">
+			<label for="bancontact">Bancontact</label>
+			<input id="pay_pal" type="radio" name="payment_method" value="pay_pal">
+			<label for="pay_pal">Pay Pal</label>
+			<input id="bank_tranfer" type="radio" name="payment_method" value="bank_tranfer">
+			<label for="bank_tranfer">Bank Tranfer</label>
+			<input id="ideal" type="radio" name="payment_method" value="ideal">
+			<label for="ideal">IDEAL</label>
+			<input id="sofort_banking" type="radio" name="payment_method" value="sofort_banking">
+			<label for="sofort_banking">SOFORT Banking</label>
+			<input id="bitcoin" type="radio" name="payment_method" value="bitcoin">
+			<label for="bitcoin">Bitcoin</label>
+		</section> <!-- payment_method -->
+
+		<section class="promo_code">
+			
+		</section>
+	</section> <!-- conteiner -->
+		<footer class="hom">
+					<div class="wrapper_footer">
+						<nav class="footer_hom_menu">
+							<ul>
+								<li><a href="#">SITEMAP</a></li>
+								<li><a href="#">HELP</a></li>
+								<li><a href="#">DELIVERY</a></li>
+								<li><a href="#">PRIVACY POLICY</a></li>
+								<li><a href="#">ACCESSIBILLITY</a></li>
+							</ul>
+						</nav>
+
+						<div class="footer_section_top">
+							<div class="footer_contentl">
+								<h3>About</h3>
+								<p>
+								Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.
+								</p>
+							</div> <!-- /footer_contentl -->
+							<div class="footer_contentr">
+								<div class="footer_mail_form">
+                        <h3>Stay in touch</h3>
+                        <form action="" name="email_form" class="email_form">
+                            <input type="email" name="E-mail" placeholder="Your E-mail">
+                            <button class="subscribe_button" type="submit">Subscribe <img src="images/mail.svg" alt="subscribe"></button>
+                        </form>
+                        </div>
+							</div> <!-- /footer_contentr -->
+						</div> <!-- /footer_section_top -->
+
+						<div class="footer_section_bottom">
+							<div class="footer_contentl">
+								<div class="footer_link">
+									<a href="#">Ade books</a>
+									<p>Rare Books &#38; Textbooks</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">DpReview</a>
+									<p>Digital Photography</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">Audible</a>
+									<p>Download Audio Books</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">Junglee</a>
+									<p>Shop Online in India</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">Look</a>
+									<p>Kids' Clothing &#38; Shoes</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">MYHABIT</a>
+									<p>Private Fashion Designer 
+									Sales</p>
+								</div>
+							</div> <!-- /footer_contentl -->
+							<div class="footer_contentr">
+								<div class="wrap_followus">
+		                    <h3>Follow us</h3>
+									<img src="images/facebook.png" alt="facebook">
+									<img src="images/twitter.png" alt="twitter">
+									<img src="images/pinterest.png" alt="pinterest">
+									<img src="images/instagram.png" alt="instagram">
+								</div>
+							</div> <!-- /footer_contentr -->
+						</div> <!-- /footer_section_bottom -->
+						
+						<p class="footer_sign">	&#169; 2016 Bookworm. All rights reserved</p>
+						<hr width="75%" size="4px">
+						<div class="block_hidden"></div>
+					</div> <!-- /wrapper_footer -->
+				</footer>
+	
+</body>
+</html>
