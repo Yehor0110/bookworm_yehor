@@ -10,127 +10,99 @@
 	<meta name="author" content="Yehor Valentiukevych">
 </head>
 <body>
-	<div id="wrapper"> <!--wrapper-->
-		<div id="grid"> 	<!--grid-->
-
-			<header> <!--header-->
-				<div id="logo">
-					<img src="images/Logo.png" alt="logotype">
-				</div> <!-- /logo -->
-
-				<nav>
-					<ul>
-						<li><a href="#">BOOKS</a></li>
-						<li><a href="#">WRITERS</a></li>
-						<li><a href="#">PUBLISHERS</a></li>
-						<li><a href="#">BLOG</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>
-				</nav>
-
-				<div id="search">
-					<img src="images/Rectangle3.png" alt="search">
-				</div>
-
-				<div id="shopping_cart">
-					<img src="images/Rectangle2.png" alt="shopping cart">
-				</div>
-
-				<div class="userpic">
-					<img src="images/userpic.png" alt="user">
-				</div>
-
-				<!-- осталось сделать форму shepe & добавить shadow -->
-			</header> <!--/header-->
-
-			<div class="banner">
-				<div class="next_book"> 
-					<!-- ... -->
-				</div>
-
-				<div class="previous_book">
-					<!-- ... -->
-				</div>
+	 <!--wrapper-->
+	 <!-- создать файл git.ignore и запушить его в реппозиторий -->
+<section id="wrapper_content">
+	<header class="top">
+		<div id="logo">
+			<img src="images/logo.svg" alt="logotype">
+		</div>
+		<nav class="navigation">
+			<ul>
+				<li><a href="#">BOOKS</a></li>
+				<li><a href="#">WRITERS</a></li>
+				<li><a href="#">PUBLISHERS</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+		<div class="header_menu">
+			<div class="search">
+				<img src="images/rectangle3.svg" alt="search">
 			</div>
-
-			<div class="book">
-				<div class="genre">
-					<p>Fantasy</p>
-				</div>
-
-				<div class="cover">
-					<a href="#"><img src="images/cover.png" alt="cover"></a>
-
-					<div class="title_cover">
-						<p>
-							Harry Potter And The Sorcerer's Stone
-						</p>
-					</div>
-
-					<div class="author_cover">
-						<p>
-							By Joan Rowling
-						</p>
-					</div>
-
-						<div class="rating">
-							<p>5</p>
-							<img src="images/star.png" alt="star">
-						</div>
-
-						<div class="short_description">
-							<p>
-								Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.
-							</p>
-						</div>
-
-						<div class="price">
-							<p>$100</p>
-						</div>
-				</div> <!-- /cover -->
-
-				<div class="background_book">
-					<img src="images/hogwarts.png" alt="Hogwarts">
-				</div>
-
-			</div> <!-- book -->
-
-			<!--  div.shape? -->
-
-			<div class="popular">
-				<div class="popular_book">
-					<div class="title_popular">
-						<p>The Da Vinci Code</p>
-					</div>
-
+			<div class="shopping_cart">
+				<img src="images/rectangle2.svg" alt="shopping cart">
+			</div>
+			<a href="#popup" class="userpic">
+				<img src="images/userpic.png" alt="user">
+			</a>
+			</div>
+		</div> <!-- /header_menu -->
+	</header> <!--/header.top-->
+	<section class="book">
+		<div class="cover_left">
+			<div class="background_book">
+				<img src="images/hogwarts.png" alt="Hogwarts">
+			</div>
+			<div class="cover">
+				<a href="#"><img src="images/cover.png" alt="cover"></a>
+			</div>
+			<div class="genre">
+					Fantasy
+			</div>
+		</div> <!-- /cover_left -->
+		<div class="cover_right">
+			<div class="title_cover">
+				Harry Potter And The Sorcerer's Stone
+			</div>
+			<div class="author_cover">
+				By Joan Rowling
+			</div>
+			<div class="rating">
+				<p>5</p>
+				<img src="images/star.png" alt="star">
+			</div>
+			<div class="short_description">
+				Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.
+			</div>
+			<div class="price">
+				$100
+			</div>
+		</div> <!-- /cover_right -->
+	</section> <!-- book -->
+	
+	<div class="conteiner">
+		<section class="popular">
+			<div class="popular_book">
+				<div class="title_popular">
+					The Da Vinci Code<br>
 					<div class="author_popular">
-							<p>
-								Dan Brown
-							</p>
+						Dan Brown
 					</div>
-
 					<div class="rating">
-							<p>5</p>
-							<img src="images/star.png" alt="star">
-					</div>
-
+						<p>5</p>
+						<img src="images/star.png" alt="star">
+					</div>	
+				</div> <!-- title_popular -->
+				<div class="popular_book_img">
 					<img src="images/da_vinci.png" alt="Da Vinci">
+				</div>
+			</div> <!-- /popular_book -->
 
-				</div> <!-- /author_popular -->
-
-				<div class="popular_theme">
-					<div class="title_popular_theme">
-						<p>A major update in the Detective section</p>
-					</div>
+			<div class="popular_theme">
+				<div class="title_popular_theme">
+					A major update in the <br> Detective section
+				</div>
+				<div class="popular_theme_img">
 					<img src="images/popular_images.png" alt="popular">
 				</div>
+			</div>
+		</section> <!-- popular -->
 
-			</div> <!-- popular -->
-
-			<div class="shopfront">
-				<h2>Shopfront</h2>
-
-					<nav>
+		<section class="shopfront">
+			<h2>Shopfront</h2>
+				<div class="shopfront_menu">
+					<nav class="navigation">
 						<ul>
 							<li><a href="#">All</a></li>
 							<li><a href="#">Art &#38; Photography</a></li>
@@ -141,116 +113,120 @@
 						</ul>
 					</nav>
 
-				<div class="sorting">
-					<p>Popular</p>
-				</div>
-
+					 <form action="popular.php" method="post">
+	   				<p><select size="1" name="popular" id="popular" placeholder="Popular">
+	    				<option>Выберите категорию<img src="images/shape6.svg" alt="category"></option>
+	    				<option value="Триллеры">Триллеры</option>
+	    				<option value="Дэтективы">Дэтективы</optio>
+	    				<option value="Фэнтэзи">Фэнтэзи</option>
+	    				<option value="Наука">Наука</option>
+	   				</select></p>
+	  				</form>
+				</div> <!-- /shopfront_menu -->
 				<div class="shopfront_books">
-					<div class="book1">
+					<div class="books">
 						<img src="images/shopfront/book1.png" alt="Opaque Region">
-						<h3 class="books_name">Opaque Region</h3>
-						<p class="author_name">Carlos Fuentes</p>
+						<div class="books_name">Opaque Region</div>
+						<div class="author_name">Carlos Fuentes</div>
 					</div>
-					<div class="book2">
+					<div class="books">
 						<img src="images/shopfront/book2.png" alt="The Meandering Corpse">
-						<h3 class="books_name">The Meandering Corpse</h3>
-						<p class="author_name">Richard S. Prather</p>
+						<div class="books_name">The Meandering Corpse</div>
+						<div class="author_name">Richard S. Prather</div>
 					</div>
-					<div class="book3">
+					<div class="books">
 						<img src="images/shopfront/book3.png" alt="English Detective Stories">
-						<h3 class="books_name">English Detective Stories</h3>
-						<p class="author_name">Patricia Craig</p>
+						<div class="books_name">English Detective Stories</div>
+						<div class="author_name">Patricia Craig</div>
 					</div>
-					<div class="book4">
+					<div class="books">
 						<img src="images/shopfront/book4.png" alt="Die Like a Dog">
-						<h3 class="books_name">Die Like a Dog</h3>
-						<p class="author_name">Brett Halliday</p>
+						<div class="books_name">Die Like a Dog</div>
+						<div class="author_name">Brett Halliday</div>
 					</div>
-					<div class="book5">
+					<div class="books">
 						<img src="images/shopfront/book5.png" alt="1984">
-						<h3 class="books_name">1984</h3>
-						<p class="author_name">George Orwell</p>
+						<div class="books_name">1984</div>
+						<div class="author_name">George Orwell</div>
 					</div>
-					<div class="book6">
+					<div class="books">
 						<img src="images/shopfront/book6.png" alt="The Lord of the Rings">
-						<h3 class="books_name">The Lord of the Rings</h3>
-						<p class="author_name">J.R.R. Tolkien</p>
+						<div class="books_name">The Lord of the Rings</div>
+						<div class="author_name">J.R.R. Tolkien</div>
 					</div>
-					<div class="book7">
+					<div class="books">
 						<img src="images/shopfront/book7.png" alt="Opaque Region">
-						<h3 class="books_name">Opaque Region</h3>
-						<p class="author_name">Carlos Fuentes</p>
+						<div class="books_name">Opaque Region</div>
+						<div class="author_name">Carlos Fuentes</div>
 					</div>
-					<div class="book8">
+					<div class="books">
 						<img src="images/shopfront/book8.png" alt="The Meandering Corpse">
-						<h3 class="books_name">The Meandering Corpse</h3>
-						<p class="author_name">Richard S. Prather</p>
+						<div class="books_name">The Meandering Corpse</div>
+						<div class="author_name">Richard S. Prather</div>
 					</div>
-					<div class="book9">
+					<div class="books">
 						<img src="images/shopfront/book9.png" alt="English Detective Stories">
-						<h3 class="books_name">English Detective Stories</h3>
-						<p class="author_name">Patricia Craig</p>
+						<div class="books_name">English Detective Stories</div>
+						<div class="author_name">Patricia Craig</div>
 						<!-- cursor -->
 					</div>
-					<div class="book10">
+					<div class="books">
 						<img src="images/shopfront/book10.png" alt="Die Like a Dog">
-						<h3 class="books_name">Die Like a Dog</h3>
-						<p class="author_name">Brett Halliday</p>
+						<div class="books_name">Die Like a Dog</div>
+						<div class="author_name">Brett Halliday</div>
 					</div>
-					<div class="book11">
+					<div class="books">
 						<img src="images/shopfront/book11.png" alt="1984">
-						<h3 class="books_name">1984</h3>
-						<p class="author_name">George Orwell</p>
+						<div class="books_name">1984</div>
+						<div class="author_name">George Orwell</div>
 					</div>
-					<div class="book12">
+					<div class="books">
 						<img src="images/shopfront/book12.png" alt="The Lord of the Rings">
-						<h3 class="books_name">The Lord of the Rings</h3>
-						<p class="author_name">J.R.R. Tolkien</p>
+						<div class="books_name">The Lord of the Rings</div>
+						<div class="author_name">J.R.R. Tolkien</div>
 					</div>
-					<div class="book13">
+					<div class="books">
 						<img src="images/shopfront/book13.png" alt="The french lieutenants woman">
-						<h3 class="books_name">The french lieutenants woman</h3>
-						<p class="author_name">John Fowles</p>
+						<div class="books_name">The french lieutenants woman</div>
+						<div class="author_name">John Fowles</div>
 					</div>
-					<div class="book14">
+					<div class="books">
 						<img src="images/shopfront/book14.png" alt="Fantastic beasts">
-						<h3 class="books_name">Fantastic beasts</h3>
-						<p class="author_name">J.K. Rowling</p>
+						<div class="books_name">Fantastic beasts</div>
+						<div class="author_name">J.K. Rowling</div>
 					</div>
-					<div class="book15">
+					<div class="books">
 						<img src="images/shopfront/book15.png" alt="Hollow city">
-						<h3 class="books_name">Hollow city</h3>
-						<p class="author_name">Ransom Riggs</p>
+						<div class="books_name">Hollow city</div>
+						<div class="author_name">Ransom Riggs</div>
 					</div>
-					<div class="book16">
+					<div class="books">
 						<img src="images/shopfront/book16.png" alt="The collector">
-						<h3 class="books_name">The collector</h3>
-						<p class="author_name">John Fowles</p>
+						<div class="books_name">The collector</div>
+						<div class="author_name">John Fowles</div>
 					</div>
-					<div class="book17">
+					<div class="books">
 						<img src="images/shopfront/book17.png" alt="The magus">
-						<h3 class="books_name">The magus</h3>
-						<p class="author_name">John Fowles</p>
+						<div class="books_name">The magus</div>
+						<div class="author_name">John Fowles</div>
 					</div>
-					<div class="book18">
+					<div class="books">
 						<img src="images/shopfront/book18.png" alt="Everything I Never Told You">
-						<h3 class="books_name">Everything I Never Told You</h3>
-						<p class="author_name">Celestre Ng</p>
+						<div class="books_name">Everything I Never Told You</div>
+						<div class="author_name">Celestre Ng</div>
 					</div>
 
-					<div class="buttom_books">
-						<a href="#">All books</a>
-					</div>
-
+					<a href="#">
+						<div class="buttom_books">
+							All books
+						</div>
+					</a>
 				</div> <!-- /shopfront_books -->
-			
-			</div> <!-- /shopfront -->
-
-				<div class="popular_writers">
+		</section> <!-- /shopfront -->
+	</div> <!-- /conteiner -->
+			<section class="popular_writers">
 					<h2>Popular writers</h2>
-					
-					<div class="writers_menu">
-						<nav>
+						<nav class="writers_menu">
 							<ul>
 								<li><a href="#">Stephen King</a></li>
 								<li><a href="#">John Fowles</a></li>
@@ -262,96 +238,91 @@
 								<li><a href="#">Rick Riordan</a></li>
 							</ul>
 						</nav>
-					</div>
-					
-					<div class="writers_name">
-						<h3>John Fowles</h3>
-					</div>
-					<div class="writers_data">
-						<p>
-							31 March 1926 
-							Leigh-on-Sea, 
-							Essex, England
-						</p>
-					</div>
+					<div class="pop_writers_left">
+						<div class="writers_name">
+							John Fowles
+						</div>
+						<div class="writers_data">
+							31 March 1926
+							<br>
+							Leigh-on-Sea, Essex,
+							<br>
+							England
+						</div>
 
-					<div class="rating">
+						<div class="rating">
 							<p>5</p>
 							<img src="images/star.png" alt="star">
-					</div>
+						</div>
 
-					<div class="quote">
-						<p>
+						<div class="quote">
 							You are right. He did not. But 
 							millions of Germans did betray their selves. That was the tragedy. Not that one man had the 
 							courage to be evil. But that 
 							millions had not the courage.
-						</p>
-					</div>
+						</div>
+					</div> <!-- pop_writers_left -->
 
 					<div class="writers_photo">
-						<img src="images/john_fowles.png" alt="writer">
+						<img src="images/fowles_djaongly.png" alt="writer">
 					</div>
-
-					<div class="writers_about">
-						<h3>About</h3>
-							<p>
+					<div class="pop_writers_right">
+						<div class="writers_about">
+							<h3>About</h3>
 								In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem…
-							</p>
-					</div>
-
-					<div class="writer_books">
-						<h3>Books</h3>
-						<a href="#"><img src="images/" alt="book"></a>
-						<a href="#"><img src="images/" alt="book"></a>
-						<a href="#"><img src="images/" alt="book"></a>
-						<a href="#"><img src="images/" alt="book"></a>
-					</div>
-
-				</div> <!-- /popular_writers -->
-
-				<div class="literature_news">
-					<h2>Literature news</h2>
-					
+						</div>
+						<div class="writer_books">
+							<h3>Books</h3>
+							<a href="#"><img src="images/books_latest/latest1.png" alt="book"></a>
+							<a href="#"><img src="images/books_latest/latest2.png" alt="book"></a>
+							<a href="#"><img src="images/books_latest/latest3.png" alt="book"></a>
+							<a href="#"><img src="images/books_latest/total_books.png" alt="book"></a>
+						</div>
+						<div class="buttom_towriter_page">
+							<a href="#">To writer page  <img src="images/books_latest/Rectangle30.png" alt=""></a>
+						</div>
+					</div> <!-- pop_writers_right -->
+			</section> <!-- /popular_writers -->
+	<div class="conteiner">
+		<section class="literature_news">
+			<h2>Literature news</h2>	
 				<div class="first_blok_news">
-
 					<div class="news_first1">
-						<!-- fixme: src не должен быть пустым -->
-						<img src="" alt="">
-						<p>Hh problems</p>
+						<img src="images/literature_news1.png" alt="1">
+						<h3>
+						How literature can help people cope with mental health problems
+						</h3>
 						<p class="author">Nathan Sandoval</p>
-						<time date=15.10.16></time>
+						<p class="book_data">15.10.16</p>
 					</div> <!-- news_first1 -->
 
 					<div class="news_first2">
-						<img src="" alt="">
-						<p>
+						<img src="images/literature_news2.png" alt="2">
+						<h3>
 							Sales of 'Harry Potter and the Cursed Child' script book hit more than 2 million within 48 hours of its release in US
-						</p>
+						</h3>
 						<p class="author">Jacqueline Taylor</p>
-						<time date=23.18.16></time>
+						<p class="book_data">23.18.16</p>
 					</div> <!-- news_first2 -->
 
 					<div class="news_first3">
-						<img src="" alt="">
-						<p>
+						<img src="images/literature_news3.png" alt="3">
+						<h3>
 							Marvel introduces character Riri Williams, awoman who takes over as new Iron Man
-						</p>
+						</h3>
 						<p class="author">Elizabeth Dixon</p>
-						<time date=16.10.15></time>
+						<p class="book_data">16.10.15</p>
 					</div> <!-- news_first3 -->
-
 				</div> <!-- /first_block_news -->
 
-				<div class="secons_news_block">
+				<hr width="100%" size="3px" color="#DDDDDD">
 
+				<div class="second_news_block">
 					<div class="second_news_block1">
-						<p>
-							Association of Former Agents of the United  
-							States Secret Service denounces anti-
-						</p>
+							Association of Former Agents of the United States Secret Service denounces anti-
+							Clinton tell-all book - Politico
 						<p class="author">Lori Stevens</p>
-						<time date=15.10.16></time>
+						<p class="book_data">15.10.16</p>
 					</div>
 
 					<div class="second_news_block2">
@@ -360,7 +331,7 @@
 							Hurtig dies at 84 - CBC
 						</p>
 						<p class="author">Michelle Taylor</p>
-						<time date=28.10.16></time>
+						<p class="book_data">28.10.16</p>
 					</div>
 
 					<div class="second_news_block3">
@@ -370,7 +341,7 @@
 							Man Booker Prize
 						</p>
 						<p class="author">Nicholas Guerrero</p>
-						<time date=15.10.16></time>
+						<p class="book_data">15.10.16</p>
 					</div>
 
 					<div class="second_news_block4">
@@ -379,84 +350,250 @@
 							special - The Guardian
 						</p>
 						<p class="author">Cynthia Simmons</p>
-						<time date=28.10.16></time>
+						<p class="book_data">28.10.16</p>
 					</div>
+				</div> <!--  second_news_block -->
 
+				<hr width="100%" size="3px" color="#DDDDDD">
+
+				<a href="#">
 					<div class="buttom_all_news">
-						<a href="#">All news</a>
+						All news
 					</div>
-						
-				</div> <!-- second_news_block -->
-
-				<!-- third_news_block ?? -->
-
-				</div> <!-- /Literature news -->
-
-				<div class="comming_soon">
+				</a>	
+		</section> <!-- /literature_news -->	
+	</div> <!-- /conteiner -->
+				<section class="comming_soon">
 					<div class="comming_soon_block">
-						<p>
+						<h3>
 							Lily and the octopus
-						</p>
+						</h3>
 
-						<p class="author">Steven Rowley</p>
+						<div class="author">Steven Rowley</div>
 
 						<div class="rating">
 							<p>5</p>
 							<img src="images/star.png" alt="star">
 						</div>
-
-						<div class="about_block_comming">
-							<p>
-								In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat 
-								aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
-							</p>
+						<div class="commingsoon_content">
+						In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat 
+						aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
 						</div>
 
-						<!-- Buttom ?? TO THE WRITER PAGE -->
-
 					</div> <!-- /comming_soon_block -->
-
+	
 					<div class="date_of_release">
 						<p>coming on</p>
-						<time date=20.05.16></time>
+						<p class="date">20.05.16></p>
 					</div>
 
 					<div class="book_cover">
-						<!-- нужно оборачивать в div?? -->
-						<img src="images/book_cover.png" alt="Steven Rowley">
+						<img src="images/lily.png" alt="Steven Rowley">
 					</div>
 
-					<img src="images/author.png" alt="">
+					<div class="author_comsun">	
+						<img src="images/john_fowles.png" alt="john_fowles" height="550px" width="650px">
+					</div>
+					<div class="slider">
+						<input id="previous_sl1" type="radio" name="slider" value="previous_sl">
+						<label for="previous_sl1"> </label>
+						<input id="previous_sl2" type="radio" name="slider" value="previous_sl2">
+						<input id="previous_sl3" type="radio" name="slider" value="previous_sl3">
+					</div>
+				</section> <!-- /comming_soon -->
+	<div class="conteiner">
+				<section class="discount">
+					<div class="background">
+						<img src="images/books_block.png" alt="books">
+					</div>
 
-					<!--
-						comming_soon_slider
-						<div class="comming_soon_slider">
-							input?
-						</div>
-					-->
-
-				</div> <!-- /comming_soon -->
-
-				<div class="discount">
 					<div class="discount_first_block">
 						<h3>Discount for novel</h3>
-						<p class="description">
+						<div class="description">
 							In hac habitasse platea dictumst. 
 							Vivamus adipiscing fermentum quam volutpat aliquam. 
-						</p>
-
-						<p class="book_sele">
-							1 book - 10%     2 books - 25%     more than 3 - 40%
-						</p>
-
-						<div class="buttom_all_books">
-							<a href="#">All books</a>
 						</div>
-					</div> <!-- /discount_first_block -->
-				</div> <!-- /discount -->
 
-		
-		</div> <!-- grid -->
-	</div> <!-- /wrapper -->
+						<hr width="60%" size="4px" color="DDDDDD">
+
+						<div class="book_sele">
+							1 book - 10%     2 books - 25%     more than 3 - 40%
+						</div>
+
+						<hr width="60%" size="4px" color="DDDDDD">
+						
+						<a href="#">
+							<div class="buttom_all_books">
+								All books
+							</div>
+						</a>
+					</div> <!-- /discount_first_block -->
+				</section> <!-- /discount -->
+
+				<section class="popular_series">
+					<h2>Popular series</h2>
+					<div class="books_series">
+						<img src="images/popular_series/intellectual_bestseller/1.png" alt="book" class="one">
+						<img src="images/popular_series/intellectual_bestseller/2.png" alt="book" class="too">
+						<img src="images/popular_series/intellectual_bestseller/3.png" alt="book" class="tree">
+						<div class="wrapper_for_link">
+						<p>Intellectual bestseller</p>
+						<a href="#">
+							20 <img src="images/Rectangle43.png" alt="book">
+						</a>
+						</div>
+					</div> <!-- /books_series1 -->
+					<div class="books_series">
+						<img src="images/popular_series/horror_library/1.png" alt="book" class="one">
+						<img src="images/popular_series/horror_library/2.png" alt="book" class="too">
+						<img src="images/popular_series/horror_library/3.png" alt="book" class="tree">
+						<div class="wrapper_for_link">
+						<p>Hobbies</p>
+						<a href="#">
+							85 <img src="images/Rectangle43.png" alt="book">
+						</a>
+						</div>
+					</div> <!-- /books_series2 -->
+					<div class="books_series">
+						<img src="images/popular_series/children_literature/1.png" alt="book" class="one">
+						<img src="images/popular_series/children_literature/2.png" alt="book" class="too">
+						<img src="images/popular_series/children_literature/3.png" alt="book" class="tree">
+						<div class="wrapper_for_link">
+						<p>Childrens literature</p>
+						<a href="#">
+							54 <img src="images/Rectangle43.png" alt="book">
+						</a>
+						</div>
+					</div> <!-- /books_series3 -->
+					<div class="books_series">
+						<img src="images/popular_series/national_geographic/1.png" alt="book" class="one">
+						<img src="images/popular_series/national_geographic/2.png" alt="book" class="too">
+						<img src="images/popular_series/national_geographic/3.png" alt="book" class="tree">
+						<div class="wrapper_for_link">
+						<p>National geographic</p>
+						<a href="#">
+							21 <img src="images/Rectangle43.png" alt="book">
+						</a>
+						</div>
+					</div> <!-- /books_series4 -->
+
+					<div class="slider">
+						<input id="previous_sl1" type="radio" name="slider" value="previous_sl">
+						<label for="previous_sl1"> </label>
+						<input id="previous_sl2" type="radio" name="slider" value="previous_sl2">
+						<!--<label for="sofort_banking">SOFORT Banking</label>-->
+						<input id="previous_sl3" type="radio" name="slider" value="previous_sl3">
+						<!--<label for="bitcoin">Bitcoin</label>-->
+						<input id="previous_sl4" type="radio" name="slider" value="previous_sl">
+						<label for="previous_sl4"> </label>
+						<input id="previous_sl5" type="radio" name="slider" value="previous_sl">
+						<label for="previous_sl5"> </label>
+					</div>
+				</section> <!-- /popular_series -->
+				
+				<section class="wrapper_publishers">
+					<div class="publishers_l">
+						<h3>Publishers</h3>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti molestiae unde voluptatibus laudantium corporis harum at.
+						<div class="buttom_full_list">
+							<a href="#">Full list</a>
+						</div>
+					</div>
+					<div class="publishers_r">
+						<img src="images/publishers/company1.png" alt="company">
+						<img src="images/publishers/company2.png" alt="company">
+						<img src="images/publishers/company3.png" alt="company">
+						<img src="images/publishers/company4.png" alt="company">
+						<img src="images/publishers/company5.png" alt="company">
+						<img src="images/publishers/company6.png" alt="company">
+						<img src="images/publishers/company7.png" alt="company">
+						<img src="images/publishers/company8.png" alt="company">
+						<img src="images/publishers/company9.png" alt="company">
+						<img src="images/publishers/company10.png" alt="company">
+						<img src="images/publishers/company11.png" alt="company">
+						<img src="images/publishers/company12.png" alt="company">
+					</div>
+				</section> <!-- /wrapper_publishers -->
+		</div> <!-- /conteiner -->
+				
+				<footer class="hom">
+					<div class="wrapper_footer">
+						<nav class="footer_hom_menu">
+							<ul>
+								<li><a href="#">SITEMAP</a></li>
+								<li><a href="#">HELP</a></li>
+								<li><a href="#">DELIVERY</a></li>
+								<li><a href="#">PRIVACY POLICY</a></li>
+								<li><a href="#">ACCESSIBILLITY</a></li>
+							</ul>
+						</nav>
+
+						<div class="footer_section_top">
+							<div class="footer_contentl">
+								<h3>About</h3>
+								<p>
+								Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.
+								</p>
+							</div> <!-- /footer_contentl -->
+							<div class="footer_contentr">
+								<div class="footer_mail_form">
+                        <h3>Stay in touch</h3>
+                        <form action="" name="email_form" class="email_form">
+                            <input type="email" name="E-mail" placeholder="Your E-mail">
+                            <button class="subscribe_button" type="submit">Subscribe <img src="images/mail.svg" alt="subscribe"></button>
+                        </form>
+                        </div>
+							</div> <!-- /footer_contentr -->
+						</div> <!-- /footer_section_top -->
+
+						<div class="footer_section_bottom">
+							<div class="footer_contentl">
+								<div class="footer_link">
+									<a href="#">Ade books</a>
+									<p>Rare Books &#38; Textbooks</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">DpReview</a>
+									<p>Digital Photography</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">Audible</a>
+									<p>Download Audio Books</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">Junglee</a>
+									<p>Shop Online in India</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">Look</a>
+									<p>Kids' Clothing &#38; Shoes</p>
+								</div>
+								<div class="footer_link">
+									<a href="#">MYHABIT</a>
+									<p>Private Fashion Designer 
+									Sales</p>
+								</div>
+							</div> <!-- /footer_contentl -->
+							<div class="footer_contentr">
+								<div class="wrap_followus">
+		                    <h3>Follow us</h3>
+									<img src="images/facebook.png" alt="facebook">
+									<img src="images/twitter.png" alt="twitter">
+									<img src="images/pinterest.png" alt="pinterest">
+									<img src="images/instagram.png" alt="instagram">
+								</div>
+							</div> <!-- /footer_contentr -->
+						</div> <!-- /footer_section_bottom -->
+						
+						<p class="footer_sign">	&#169; 2016 Bookworm. All rights reserved</p>
+						<hr width="75%" size="4px">
+						<div class="block_hidden"></div>
+					</div> <!-- /wrapper_footer -->
+				</footer>
+</section> <!-- wrapper_content -->								
+
+<div id="popup">
+		<a href="#">close</a>	
+</div>
 </body>
 </html>
