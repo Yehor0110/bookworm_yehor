@@ -12,9 +12,9 @@ botton.addEventListener("submit", calculator);
 
 function calculator() {
 	var price = 0;
-   price += parseInt(cleaning.checked == true.dataTimeBedrooms);
-   price += (is_html.checked == true) ? parseInt(is_html.value) : 0;
-   price = parseInt(count.value) * price;
+	price += parseInt(periodic.checked == true.dataTimeBedrooms);
+	price += parseInt(oneTime.checked == true.dataTimeBedrooms);
+	price += parseInt(endOfLease.checked == true.dataTimeBedrooms);
  
    result.innerHTML = price;
 
