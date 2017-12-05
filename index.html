@@ -33,9 +33,10 @@
 			<div class="shopping_cart">
 				<img src="images/rectangle2.svg" alt="shopping cart">
 			</div>
-			<a href="#popup" class="userpic">
+			<a href="#popup1" class="userpic">
 				<img src="images/userpic.png" alt="user">
 			</a>
+			<a href="#mobile_menu" class="menu example5"><span></span></a> 
 			</div>
 		</div> <!-- /header_menu -->
 	</header> <!--/header.top-->
@@ -591,20 +592,37 @@
 					</div> <!-- /wrapper_footer -->
 				</footer>
 </section> <!-- wrapper_content -->								
-
 <section class="popup_demo">
-	<!--<div class="box">
-		<a href="#popup1" class="bottom">Popup</a>
-	</div>-->
 	<div id="popup1" class="overlay">
 		<div class="popup">
-			<h2></h2>
-			<div class="content">
-				<div class="actions">
-					<a href="#" class="close">close</a>
-				</div>
+			<div class="actions">
+					<a href="#" class="close" id="hide-popup">X</a>
 			</div>
-		</div>		
+			<h2>Login</h2>
+			<div class="content">
+				<div class="input_popup">
+						<input type="text" name="text" placeholder="E-mail">
+				</div>
+				<div class="input_popup">
+						<input type="text" name="text" placeholder="Password">
+				</div>
+				<section class="remember_me">	
+				<input type="checkbox" name="create_account">
+				Remember me
+				<br>
+				</section>
+				<a href="#" class="forgot_password">Forgot password</a>
+
+				<button class="popup_button" type="submit">Sign in</button>
+				<br>
+				<a href="#" class="create_account_popup">Create an account</a>
+				<hr class="popup_hr" width="100%" size="3px" color="#DDDDDD">
+				<h3>Sign in with social:</h3>
+				<a href="#" class="links_popup"><img src="images/Rectangle57.svg" alt="facebook"></a>
+				<a href="#" class="links_popup"><img src="images/Rectangle58.svg" alt="twitter"></a>
+				<a href="#" class="links_popup"><img src="images/Rectangle59.svg" alt="google"></a>
+			</div>
+		</div>
 	</div>
 </section> <!-- popup_demo -->
 </body>
